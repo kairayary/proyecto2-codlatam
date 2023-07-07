@@ -199,13 +199,7 @@ body.dark { background: #222;
     margin-top: 2%;
 
 }
-.descriptionContact{
-   
-    margin-right: 25%;
-    border-radius: 10px;
-    padding: 2rem;
-    background-color:#f1916d;
-}
+
 
 .descriptionContact h2{
     font-size: 1.68rem;
@@ -277,13 +271,20 @@ footer{
         width: 70%;
         margin-left: 25%;
     }
+    .descriptionContact{
+   
+        margin-right: 25%;
+        border-radius: 10px;
+        padding: 2rem;
+        background-color:#f1916d;
+    }
     .containerIcons{
         margin-right: 25%;
     }
    
 }
 
-@media (max-width:320px){
+@media (max-width:375px){
     #skills{
         margin-top: 25rem;
     }
@@ -328,8 +329,9 @@ footer{
         margin-top: 56.25rem;
     }
     .descriptionContact{
-       margin: 0;
-       padding: 0;
+        border-radius: 10px;
+        padding: 2rem;
+        background-color:#f1916d;
     }
    
 }
