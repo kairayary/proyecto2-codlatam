@@ -1,0 +1,324 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+
+header{
+    position:sticky;
+    top: 0;
+    z-index: 1;
+}
+nav {
+    background: rgb(189,131,187);
+    background: linear-gradient(90deg, rgba(189,131,187,1) 9%, rgba(241,145,109,1) 45%, rgba(71,62,102,1) 100%);
+    width: 100%;
+    
+    
+}
+.navbar-brand{
+    text-shadow: 0 0 3px #ebd5d5, 0 0 5px #ebd5d5, 0 0 5px #ebd5d5;
+    font-family: 'Dancing Script', cursive;
+    color: #f18912;
+    
+}
+.navbar-text a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1.5rem;
+    text-decoration: none; 
+    box-shadow: 0 0 3px #ebd5d5, 0 0 5px #ebd5d5, 0 0 5px #ebd5d5;
+    border-radius: 10px;
+    padding: 1rem;
+   
+    
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    z-index: -1;
+}
+.nav-link:hover {
+    border-radius: 10px;
+    background-color: #ebd5d5;
+    box-shadow: 0 0 10px #ebd5d5, 0 0 15px #ebd5d5, 0 0 15px #ebd5d5;
+    
+}
+  
+body.dark { background: #222;
+    color: #c7c0b5; }
+
+
+.darkModeSwitch{
+    background: rgba(189,131,187,1);
+    background: linear-gradient(90deg, rgba(189,131,187,1) 9%, rgba(241,145,109,1) 45%, rgba(71,62,102,1) 100%);
+    display:flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.darkModeSwitch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #5a4a57;
+    background: none;
+}
+.darkModeSwitch::after{
+    display:block;
+    background: rgba(189,131,187,1) 9%;
+    background: linear-gradient(90deg, rgba(189,131,187,1) 9%, rgba(241,145,109,1) 45%, rgba(71,62,102,1) 100%);
+    width: 1.9rem;
+    height: 1.9rem;
+    position: absolute;
+    top:0;
+    left:0;
+    right:unset;
+    border-radius: 3rem;
+    transition: all .5s ease;
+
+    content: "";
+}
+.darkModeSwitch.active{
+    background: rgba(189,131,187,1) 9%;
+    background: linear-gradient(90deg, rgba(189,131,187,1) 9%, rgba(241,145,109,1) 45%, rgba(71,62,102,1) 100%);
+}
+.darkModeSwitch.active::after{
+  left:unset;
+  right:0;
+}
+
+.containerBanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textBanner span{
+    font-family: 'Dancing Script', cursive;
+}
+.imgBanner{
+    margin-top: 4.9rem;
+    width: 18.75rem;
+    height: 25rem;
+    border-radius: 100%;
+    box-shadow: 8px 8px 12px;
+}
+.containerBanner h1{
+    font-size: 2.16rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.containerBanner p{
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #0f0f0f;
+   
+}
+
+.textBanner span{
+    color: #f18912;
+}
+
+
+.buttonBanner {
+    display: inline-block;
+    padding: 4px 20px;
+    background-color: #f18912;
+    color: #fbfbfb;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 12px;
+}
+
+
+
+.containerSkills{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.containerSkills h1{
+
+    text-align: center;
+
+}
+.itemSkills{
+   
+ display: flex;
+  flex-wrap: wrap;
+ padding:0em 12em 0em 12em;
+   
+}
+.item{
+   
+    display: flex;
+    width: 250px;
+    height: 180px;
+    border: 1.3px solid #f18912;
+    border-radius:7px;
+    margin: 2em auto;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   font-weight: 700;
+
+}
+
+.item i{
+    color: #f18912;
+}
+.containerContact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+
+}
+.descriptionContact{
+   
+    margin-right: 25%;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color:#bd83bb;
+}
+
+.descriptionContact h2{
+    font-size: 1.68rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.descriptionContact p{
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #0f0f0f;
+}
+.containerIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.containerIcons a{
+    text-decoration: none;
+    color: inherit;
+}
+.icon{
+    background-color: #f18912;
+    margin: 20px 10px;
+    height: 50px;
+    width: 50px;
+}
+footer{
+    background-color: #f1916d;
+    border-radius: 5px;
+    height: 50px;
+    text-align: center;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:1024px) {
+    #skills, #contact{
+        padding-top: 6.5%;
+    }
+   
+    .containerBanner{
+        margin: 3em 8em 3em 8em;    
+        flex-direction: row;
+        width: 90%; 
+        column-gap: 5%;     
+    }
+
+    .textBanner{
+        flex-direction:column;   
+    }
+    
+    .textBanner h1{
+        text-align: left;
+        font-size: 42px;
+    }
+    
+    .containerContact{
+        
+        width: 70%;
+        margin-left: 25%;
+    }
+    .containerIcons{
+        margin-right: 25%;
+    }
+   
+}
+
+@media (max-width:320px){
+    #skills{
+        margin-top: 25rem;
+    }
+    header{
+        position:sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .navbar-text a{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 1rem;
+        text-decoration: none; 
+        box-shadow: 0 0 5px #ebd5d5, 0 0 8px #ebd5d5, 0 0 8px #ebd5d5;
+        border-radius: 5px;
+        padding: 0px;
+    }
+    .logo{
+        display: none;
+    }
+    .containerBanner p{
+        text-align: center;
+    }
+    .typed i{
+        
+        margin-left: 13px;
+    }
+    .buttonBanner{
+        margin-left: 77px;
+    }
+    .containerContact{
+        margin: 17px;
+        margin-top: 56.25rem;
+    }
+    .descriptionContact{
+        margin-left: 15%;
+    }
+   
+}
