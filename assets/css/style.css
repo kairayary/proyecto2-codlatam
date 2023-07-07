@@ -285,9 +285,7 @@ footer{
 }
 
 @media (max-width:375px){
-    #skills{
-        margin-top: 25rem;
-    }
+ 
     header{
         position:sticky;
         top: 0;
@@ -324,10 +322,7 @@ footer{
         flex-wrap: wrap;
    
     }
-    .containerContact{
-       
-        margin-top: 56.25rem;
-    }
+   
     .descriptionContact{
         border-radius: 10px;
         padding: 2rem;
