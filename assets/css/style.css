@@ -19,18 +19,19 @@ nav {
     
 }
 .navbar-brand{
-    text-shadow: 0 0 3px #ebd5d5, 0 0 5px #ebd5d5, 0 0 5px #ebd5d5;
+    text-shadow: 0 0 3px #f18912, 0 0 5px #f18912, 0 0 5px #f18912;
     font-family: 'Dancing Script', cursive;
-    color: #f18912;
+    
     
 }
 .navbar-text a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 1.5rem;
     text-decoration: none; 
-    box-shadow: 0 0 3px #ebd5d5, 0 0 5px #ebd5d5, 0 0 5px #ebd5d5;
+    box-shadow: 0 0 3px #ebd5d5, 0 0 5px #f18912, 0 0 5px #f18912;
     border-radius: 10px;
     padding: 1rem;
+    color: #f18912;
    
     
 }
@@ -59,7 +60,7 @@ body.dark { background: #222;
 
 .darkModeSwitch{
     background: rgba(189,131,187,1);
-    background: linear-gradient(90deg, rgba(189,131,187,1) 9%, rgba(241,145,109,1) 45%, rgba(71,62,102,1) 100%);
+    background: linear-gradient(90deg, rgba(189,131,187,1) 39%, rgba(241,145,109,1) 75%, rgba(71,62,102,1) 100%);
     display:flex;
     position: relative;
     cursor: pointer;
@@ -74,7 +75,7 @@ body.dark { background: #222;
     height: 30px;
     line-height: 30px;
     display: block;
-    color: #5a4a57;
+    color: #000000;
     background: none;
 }
 .darkModeSwitch::after{
@@ -159,7 +160,7 @@ body.dark { background: #222;
     
 }
 .containerSkills h1{
-
+    text-shadow: 0 0 3px #f18912, 0 0 3px #f18912, 0 0 3px #f18912;
     text-align: center;
 
 }
@@ -203,7 +204,7 @@ body.dark { background: #222;
     margin-right: 25%;
     border-radius: 10px;
     padding: 2rem;
-    background-color:#bd83bb;
+    background-color:#f1916d;
 }
 
 .descriptionContact h2{
@@ -239,7 +240,8 @@ body.dark { background: #222;
     width: 50px;
 }
 footer{
-    background-color: #f1916d;
+    background: rgba(189,131,187,1) 9%;
+    background: linear-gradient(90deg, rgba(189,131,187,1) 9%, rgba(241,145,109,1) 45%, rgba(71,62,102,1) 100%);
     border-radius: 5px;
     height: 50px;
     text-align: center;
@@ -306,6 +308,9 @@ footer{
     .containerBanner p{
         text-align: center;
     }
+    .textBanner h1{
+        font-size:x-large;
+    }
     .typed i{
         
         margin-left: 13px;
@@ -313,12 +318,17 @@ footer{
     .buttonBanner{
         margin-left: 77px;
     }
+    .itemSkills {
+        
+        flex-wrap: wrap;
+   
+    }
     .containerContact{
-        margin: 17px;
+       
         margin-top: 56.25rem;
     }
     .descriptionContact{
-        margin-left: 15%;
+       margin: 0;
     }
    
 }
